@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="view-transition" content="same-origin" />
+
+  <title>Portfolio | Nisarg Click Photography</title>
+  <meta name="description" content="Browse Nisarg Click's portfolio — portrait, wedding, event, birthday, baby shower, and product photography." />
+  <link rel="canonical" href="https://www.nisargclick.com/portfolio.html" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Portfolio | Nisarg Click Photography" />
+  <meta property="og:description" content="Portrait, wedding, event, birthday, baby shower, and product photography." />
+  <meta property="og:image" content="https://www.nisargclick.com/Weddings/1.avif" />
+  <meta property="og:url" content="https://www.nisargclick.com/portfolio.html" />
+  <meta property="og:site_name" content="Nisarg Click" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Portfolio | Nisarg Click Photography" />
+  <meta name="twitter:description" content="Portrait, wedding, event, birthday, baby shower, and product photography." />
+  <meta name="twitter:image" content="https://www.nisargclick.com/Weddings/1.avif" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ImageGallery",
+    "name": "Nisarg Click Portfolio",
+    "description": "Portrait, wedding, event, birthday, baby shower, and product photography by Nisarg Click.",
+    "url": "https://www.nisargclick.com/portfolio.html"
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Work+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ─── NAVIGATION ─── -->
+  <header class="site-nav scrolled" id="site-nav" role="banner" aria-label="Main navigation">
+    <a href="index.html" class="nav-logo">Nisarg<em>Click</em></a>
+    <nav aria-label="Primary">
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="portfolio.html" class="active">Work</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="about.html#contact" class="nav-cta">Enquire</a></li>
+      </ul>
+    </nav>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <main id="main">
+
+    <!-- ─── PAGE HERO ─── -->
+    <section class="page-hero" aria-label="Portfolio introduction">
+      <div class="container">
+        <span class="section-label reveal">Portfolio</span>
+        <h1 class="page-hero-title reveal">
+          Five disciplines.<br><em>One way of seeing.</em>
+        </h1>
+        <p class="page-hero-sub reveal">
+          Every category below reflects the same instinct for light, composition,
+          and the moment just before or after the obvious one. Filter by category
+          to see work from a specific kind of shoot.
+        </p>
+      </div>
+    </section>
+
+    <!-- ─── FILTER BAR ─── -->
+    <div class="container">
+      <div class="filter-bar" role="group" aria-label="Filter portfolio by category">
+        <button class="filter-btn active" data-filter="all">All Work</button>
+        <button class="filter-btn" data-filter="portrait">Portrait</button>
+        <button class="filter-btn" data-filter="wedding">Wedding</button>
+        <button class="filter-btn" data-filter="event">Event</button>
+        <button class="filter-btn" data-filter="birthday">Birthday</button>
+        <button class="filter-btn" data-filter="baby-shower">Baby Shower</button>
+        <!-- <button class="filter-btn" data-filter="product">Product</button> -->
+        <span class="filter-count" aria-live="polite">18 images</span>
+      </div>
+    </div>
+
+    <!-- ─── FILTERABLE GRID ─── -->
+    <section class="container" aria-label="Portfolio gallery">
+      <div class="filter-grid" role="list">
+
+        <!-- PORTRAIT -->
+        <div class="print-frame" data-category="portrait" role="listitem" style="--tilt:-1.4deg">
+          <div class="frame-inner"><img src="./Portrait/1.avif" alt="Portrait — soft studio light" loading="lazy" decoding="async" fetchpriority="low" width="800" height="1000" /></div>
+          <div class="print-pin" aria-hidden="true"></div><span class="print-caption">Portrait</span>
+        </div>
+        <div class="print-frame" data-category="portrait" role="listitem" style="--tilt:1.6deg">
+          <div class="frame-inner"><img src="./Portrait/2.avif" alt="Portrait — soft studio light" loading="lazy" decoding="async" fetchpriority="low" width="800" height="1000" /></div>
+          <div class="print-pin" aria-hidden="true"></div><span class="print-caption">Portrait</span>
+        </div>
+        <div class="print-frame" data-category="portrait" role="listitem" style="--tilt:-.8deg">
+          <div class="frame-inner"><img src="./Portrait/3.avif" alt="Portrait — soft studio light" loading="lazy" decoding="async" fetchpriority="low" width="800" height="1000" /></div>
+          <div class="print-pin" aria-hidden="true"></div><span class="print-caption">Portrait</span>
+        </div>
+
+        <!-- WEDDING -->
+        <div class="print-frame" data-category="wedding" role="listitem" style="--tilt:-1.4deg">
+          <div class="frame-inner"><img src="./Weddings/1.avif" alt="Wedding — first dance under string lights" loading="lazy" decoding="async" fetchpriority="low" width="800" height="1000" /></div>
+          <div class="print-pin" aria-hidden="true"></div><span class="print-caption">Wedding</span>
+        </div>
+        <div class="print-frame" data-category="wedding" role="listitem" style="--tilt:1.6deg">
+          <div class="frame-inner"><img src="./Weddings/2.avif" alt="Wedding — couple portrait at golden hour" loading="lazy" decoding="async" fetchpriority="low" width="800" height="1000" /></div>
+          <div class="print-pin" aria-hidden="true"></div><span class="print-caption">Wedding</span>
+        </div>
+        <div class="print-frame" data-category="wedding" role="listitem" style="--tilt:-.8deg">
+          <div class="frame-inner"><img src="./Weddings/3.avif" alt="Wedding — couple portrait at golden hour" loading="lazy" decoding="async" fetchpriority="low" width="800" height="1000" /></div>
+          <div class="print-pin" aria-hidden="true"></div><span class="print-caption">Wedding</span>
+        </div>
+
+        <!-- EVENT -->
+        <div class="print-frame" data-category="event" role="listitem" style="--tilt:-1.4deg">
+          <div class="frame-inner"><img src="./Event/1.jpg" alt="Event — gala dinner candid moment" loading="lazy" decoding="async" fetchpriority="low" width="800" height="1000" /></div>
+          <div class="print-pin" aria-hidden="true"></div><span class="print-caption">Event</span>
+        </div>
+        <div class="print-frame" data-category="event" role="listitem" style="--tilt:1.6deg">
+          <div class="frame-inner"><img src="./Event/2.jpg" alt="Event — corporate launch crowd" loading="lazy" decoding="async" fetchpriority="low" width="800" height="1000" /></div>
+          <div class="print-pin" aria-hidden="true"></div><span class="print-caption">Event</span>
+        </div>
+        <div class="print-frame" data-category="event" role="listitem" style="--tilt:-.8deg">
+          <div class="frame-inner"><img src="./Event/3.jpg" alt="Event — corporate launch crowd" loading="lazy" decoding="async" fetchpriority="low" width="800" height="1000" /></div>
+          <div class="print-pin" aria-hidden="true"></div><span class="print-caption">Event</span>
+        </div>
+
+        <!-- BIRTHDAY -->
+        <div class="print-frame" data-category="birthday" role="listitem" style="--tilt:-1.4deg">
+          <div class="frame-inner"><img src="./Birthday/1.jpg" alt="Birthday celebration — candles and candid laughter" loading="lazy" decoding="async" fetchpriority="low" width="800" height="1000" /></div>
+          <div class="print-pin" aria-hidden="true"></div><span class="print-caption">Birthday</span>
+        </div>
+        <div class="print-frame" data-category="birthday" role="listitem" style="--tilt:1.6deg">
+          <div class="frame-inner"><img src="./Birthday/2.jpg" alt="Birthday party — pastel balloons and decor" loading="lazy" decoding="async" fetchpriority="low" width="800" height="1000" /></div>
+          <div class="print-pin" aria-hidden="true"></div><span class="print-caption">Birthday</span>
+        </div>
+        <div class="print-frame" data-category="birthday" role="listitem" style="--tilt:-.8deg">
+          <div class="frame-inner"><img src="./Birthday/3.jpg" alt="Birthday party — pastel balloons and decor" loading="lazy" decoding="async" fetchpriority="low" width="800" height="1000" /></div>
+          <div class="print-pin" aria-hidden="true"></div><span class="print-caption">Birthday</span>
+        </div>
+
+        <!-- BABY SHOWER -->
+        <div class="print-frame" data-category="baby-shower" role="listitem" style="--tilt:-1.4deg">
+          <div class="frame-inner"><img src="./Baby/1.jpg" alt="Baby shower — soft pastel table setting" loading="lazy" decoding="async" fetchpriority="low" width="800" height="1000" /></div>
+          <div class="print-pin" aria-hidden="true"></div><span class="print-caption">Baby Shower</span>
+        </div>
+        <div class="print-frame" data-category="baby-shower" role="listitem" style="--tilt:1.6deg">
+          <div class="frame-inner"><img src="./Baby/2.jpg" alt="Baby shower — gift opening candid" loading="lazy" decoding="async" fetchpriority="low" width="800" height="1000" /></div>
+          <div class="print-pin" aria-hidden="true"></div><span class="print-caption">Baby Shower</span>
+        </div>
+        <div class="print-frame" data-category="baby-shower" role="listitem" style="--tilt:-.8deg">
+          <div class="frame-inner"><img src="./Baby/3.jpg" alt="Baby shower — gift opening candid" loading="lazy" decoding="async" fetchpriority="low" width="800" height="1000" /></div>
+          <div class="print-pin" aria-hidden="true"></div><span class="print-caption">Baby Shower</span>
+        </div>
+
+        <!-- PRODUCT -->
+        <!-- <div class="print-frame" data-category="product" role="listitem" style="--tilt:-1.4deg">
+          <div class="frame-inner"><img src="./Product/2.jpg" alt="Product photography — accessories on neutral background" loading="lazy" decoding="async" fetchpriority="low" width="800" height="1000" /></div>
+          <div class="print-pin" aria-hidden="true"></div><span class="print-caption">Product</span>
+        </div>
+        <div class="print-frame" data-category="product" role="listitem" style="--tilt:1.6deg">
+          <div class="frame-inner"><img src="./Product/3.jpg" alt="Product photography — accessories on neutral background" loading="lazy" decoding="async" fetchpriority="low" width="800" height="1000" /></div>
+          <div class="print-pin" aria-hidden="true"></div><span class="print-caption">Product</span>
+        </div>
+        <div class="print-frame" data-category="product" role="listitem" style="--tilt:-.8deg">
+          <div class="frame-inner"><img src="./Product/4.jpg" alt="Product photography — accessories on neutral background" loading="lazy" decoding="async" fetchpriority="low" width="800" height="1000" /></div>
+          <div class="print-pin" aria-hidden="true"></div><span class="print-caption">Product</span>
+        </div> -->
+
+      </div>
+    </section>
+
+    <!-- ─── QUOTE ─── -->
+    <aside class="quote-band" aria-label="Client testimonial">
+      <blockquote class="reveal">
+        <span class="quote-mark" aria-hidden="true">&ldquo;</span>
+        <p class="quote-text">
+          Nisarg doesn't just photograph a space he photographs the feeling of being inside it.
+        </p>
+      </blockquote>
+    </aside>
+
+  </main>
+
+  <!-- ─── FOOTER ─── -->
+  <footer class="site-footer" role="contentinfo" aria-label="Site footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-logo">Nisarg <em>Click</em></div>
+        <nav class="footer-nav" aria-label="Footer navigation">
+          <a href="index.html">Home</a>
+          <a href="portfolio.html">Work</a>
+          <a href="about.html">About</a>
+          <a href="about.html#contact">Contact</a>
+        </nav>
+      </div>
+      <p class="footer-copy">
+        &copy; 2025 Nisarg Click. All rights reserved. Photography by Nisarg. Designed with intent.
+      </p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
