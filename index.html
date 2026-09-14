@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<!--
+  Nisarg CLICK — Photography Portfolio (v2 redesign)
+  ====================================================
+  Pages: index.html (Home) · portfolio.html (Work, filterable) · about.html (About + Contact)
+  Palette: blush/rose on porcelain white. Type: Fraunces + Work Sans.
+  Signature: instant-print photo frames + light-leak reveal + a literal
+  scrollable 35mm "slide" filmstrip for featured work.
+-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="view-transition" content="same-origin" />
+
+  <title>Nisarg Click | Professional Photography in London</title>
+  <meta name="description" content="Nisarg Click — photography for portraits, weddings, events, birthdays, and baby showers. Based in London. Available worldwide." />
+  <link rel="canonical" href="https://www.nisargclick.com/" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Nisarg Click | Professional Photography" />
+  <meta property="og:description" content="Photography for portraits, weddings, events, birthdays, and baby showers. Based in London." />
+  <meta property="og:image" content="https://www.nisargclick.com/Weddings/1.avif" />
+  <meta property="og:url" content="https://www.nisargclick.com/" />
+  <meta property="og:site_name" content="Nisarg Click" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Nisarg Click | Professional Photography" />
+  <meta name="twitter:description" content="Photography for portraits, weddings, events, birthdays, and baby showers." />
+  <meta name="twitter:image" content="https://www.nisargclick.com/Weddings/1.avif" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": ["LocalBusiness", "ProfessionalService"],
+    "name": "Nisarg Click",
+    "description": "Photography studio specialising in portraits, weddings, events, birthdays, and baby showers photography.",
+    "url": "https://www.nisargclick.com/",
+    "telephone": "+44 20 7946 0123",
+    "email": "nisargclick@gmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "12 Mercer Street",
+      "addressLocality": "London",
+      "postalCode": "WC2H 9QA",
+      "addressCountry": "GB"
+    },
+    "geo": { "@type": "GeoCoordinates", "latitude": 51.5138, "longitude": -0.1266 },
+    "openingHours": "Mo-Fr 09:00-18:00",
+    "priceRange": "£££",
+    "sameAs": ["https://www.instagram.com/nisargclick/", "https://www.behance.net/nisargclick"]
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Work+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ─── NAVIGATION ─── -->
+  <header class="site-nav" id="site-nav" role="banner" aria-label="Main navigation">
+    <a href="index.html" class="nav-logo">Nisarg <em>Click</em></a>
+    <nav aria-label="Primary">
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="portfolio.html">Work</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="about.html#contact" class="nav-cta">Enquire</a></li>
+      </ul>
+    </nav>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <main id="main">
+
+    <!-- ─── HERO ─── -->
+    <section class="hero" id="hero" aria-label="Hero — Nisarg Click Photography">
+      <div class="container hero-grid">
+        <div>
+          <p class="hero-eyebrow" id="hero-eyebrow">London — Available Worldwide</p>
+          <h1 class="hero-title" aria-label="Nisarg Click">
+            <span class="word"><span class="word-inner" id="hw-1">Nisarg</span></span>&#32;
+            <span class="word"><span class="word-inner" id="hw-2"><em>Click.</em></span></span>
+          </h1>
+          <p class="hero-tagline" id="hero-tagline">
+            I capture the moments people actually remember the laugh before the 
+            toast, the hand squeeze before "I do." Events, weddings, and the 
+            milestones in between.
+          </p>
+          <div class="hero-actions" id="hero-actions">
+            <a href="portfolio.html" class="btn btn-solid">View the Work</a>
+            <a href="about.html#contact" class="btn btn-ghost">Enquire</a>
+          </div>
+        </div>
+
+        <div class="hero-visual" id="hero-visual" style="--tilt:-3deg">
+          <div class="print-frame">
+            <div class="frame-inner">
+              <img src="./Weddings/1.avif" alt="Bride and groom portrait at golden hour" loading="lazy" decoding="async" fetchpriority="high" width="800" height="1000" />
+            </div>
+            <div class="print-pin" aria-hidden="true"></div>
+            <span class="print-caption">Est. London</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── FILMSTRIP — FEATURED WORK ─── -->
+    <section class="filmstrip-section" aria-label="Featured work, scrollable filmstrip">
+      <div class="container">
+        <div class="filmstrip-header">
+          <div class="reveal">
+            <span class="section-label">Selected Frames</span>
+            <h2 class="filmstrip-title">Slide through<br><em>a few favourites.</em></h2>
+          </div>
+          <span class="filmstrip-hint reveal">
+            Scroll for more
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </span>
+        </div>
+
+        <div class="filmstrip-rail">
+          <div class="filmstrip-track" role="list" aria-label="Scrollable featured images">
+
+            <div class="filmstrip-frame" role="listitem">
+              <div class="print-frame" style="--tilt:0deg">
+                <div class="frame-inner">
+                  <img src="./Portrait/2.avif" alt="Portrait photography — soft studio light" loading="lazy" decoding="async" fetchpriority="low" width="800" height="1000" />
+                </div>
+                <div class="print-pin" aria-hidden="true"></div>
+                <span class="print-caption">Portrait</span>
+              </div>
+            </div>
+
+            <div class="filmstrip-frame" role="listitem">
+              <div class="print-frame" style="--tilt:0deg">
+                <div class="frame-inner">
+                  <img src="./Weddings/2.avif" alt="Wedding photography — couple at golden hour" loading="lazy" decoding="async" fetchpriority="low" width="800" height="1000" />
+                </div>
+                <div class="print-pin" aria-hidden="true"></div>
+                <span class="print-caption">Wedding</span>
+              </div>
+            </div>
+
+            <div class="filmstrip-frame" role="listitem">
+              <div class="print-frame" style="--tilt:0deg">
+                <div class="frame-inner">
+                  <img src="./Event/1.jpg" alt="Event photography — gala candid" loading="lazy" decoding="async" fetchpriority="low" width="800" height="1000" />
+                </div>
+                <div class="print-pin" aria-hidden="true"></div>
+                <span class="print-caption">Event</span>
+              </div>
+            </div>
+
+            <div class="filmstrip-frame" role="listitem">
+              <div class="print-frame" style="--tilt:0deg">
+                <div class="frame-inner">
+                  <img src="./Birthday/1.jpg" alt="Birthday celebration photography" loading="lazy" decoding="async" fetchpriority="low" width="800" height="1000" />
+                </div>
+                <div class="print-pin" aria-hidden="true"></div>
+                <span class="print-caption">Birthday</span>
+              </div>
+            </div>
+
+            <div class="filmstrip-frame" role="listitem">
+              <div class="print-frame" style="--tilt:0deg">
+                <div class="frame-inner">
+                  <img src="./Baby/1.jpg" alt="Baby shower photography — soft pastel decor" loading="lazy" decoding="async" fetchpriority="low" width="800" height="1000" />
+                </div>
+                <div class="print-pin" aria-hidden="true"></div>
+                <span class="print-caption">Baby Shower</span>
+              </div>
+            </div>
+</div>
+        </div>
+
+        <div class="featured-header" style="margin-top:1rem;margin-bottom:0">
+          <a href="portfolio.html" class="view-all reveal">View full portfolio</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── SERVICES TEASER ─── -->
+    <section class="svc-teaser" id="services" aria-label="Photography specialities">
+      <div class="container">
+        <div class="svc-teaser-header reveal">
+          <span class="section-label">Specialities</span>
+          <h2 class="svc-teaser-title">Five disciplines,<br><em>one eye for detail.</em></h2>
+        </div>
+
+        <div class="svc-strip reveal-group">
+          <div class="svc-chip reveal">
+            <svg class="svc-chip-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
+            <div class="svc-chip-name">Portrait</div>
+          </div>
+          <div class="svc-chip reveal">
+            <svg class="svc-chip-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M20 12.5a8 8 0 1 1-9-7.94M20 4l-8 8m0-5v5h5"/></svg>
+            <div class="svc-chip-name">Wedding</div>
+          </div>
+          <div class="svc-chip reveal">
+            <svg class="svc-chip-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M8 2v4m8-4v4M3 10h18M5 4h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z"/></svg>
+            <div class="svc-chip-name">Event</div>
+          </div>
+          <div class="svc-chip reveal">
+            <svg class="svc-chip-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M12 2v4M5 8l2-2M19 8l-2-2M3 14h18M5 22h14a2 2 0 0 0 2-2v-4a6 6 0 0 0-6-6h-6a6 6 0 0 0-6 6v4a2 2 0 0 0 2 2z"/></svg>
+            <div class="svc-chip-name">Birthday</div>
+          </div>
+          <div class="svc-chip reveal">
+            <svg class="svc-chip-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="14" r="7"/><path d="M9 14a3 3 0 0 1 6 0M10 5.5c0-1 .9-2 2-2s2 1 2 2"/></svg>
+            <div class="svc-chip-name">Baby Shower</div>
+          </div>
+</div>
+      </div>
+    </section>
+
+    <!-- ─── QUOTE ─── -->
+    <aside class="quote-band" aria-label="Client testimonial">
+      <blockquote class="reveal">
+        <span class="quote-mark" aria-hidden="true">&ldquo;</span>
+        <p class="quote-text">
+          Nisarg doesn't just photograph a space he photographs the feeling of being inside it.
+        </p>
+      </blockquote>
+    </aside>
+
+  </main>
+
+  <!-- ─── FOOTER ─── -->
+  <footer class="site-footer" role="contentinfo" aria-label="Site footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-logo">Nisarg<em>Click</em></div>
+        <nav class="footer-nav" aria-label="Footer navigation">
+          <a href="index.html">Home</a>
+          <a href="portfolio.html">Work</a>
+          <a href="about.html">About</a>
+          <a href="about.html#contact">Contact</a>
+        </nav>
+      </div>
+      <p class="footer-copy">
+        &copy; 2025 Nisarg Click. All rights reserved. Photography by Stark. Designed with intent.
+      </p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
